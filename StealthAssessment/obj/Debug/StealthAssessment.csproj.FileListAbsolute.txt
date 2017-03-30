@@ -1,0 +1,12 @@
+d:\documents\visual studio 2017\Projects\StealthAssessment\StealthAssessment\bin\Debug\StealthAssessment.exe.config
+d:\documents\visual studio 2017\Projects\StealthAssessment\StealthAssessment\bin\Debug\StealthAssessment.exe
+d:\documents\visual studio 2017\Projects\StealthAssessment\StealthAssessment\bin\Debug\StealthAssessment.pdb
+d:\documents\visual studio 2017\Projects\StealthAssessment\StealthAssessment\obj\Debug\StealthAssessment.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2017\Projects\StealthAssessment\StealthAssessment\obj\Debug\StealthAssessment.exe
+d:\documents\visual studio 2017\Projects\StealthAssessment\StealthAssessment\obj\Debug\StealthAssessment.pdb
+C:\Users\GKN\Desktop\RAGE - Kostas\StealthAssessment\StealthAssessment\bin\Debug\StealthAssessment.exe.config
+C:\Users\GKN\Desktop\RAGE - Kostas\StealthAssessment\StealthAssessment\obj\Debug\StealthAssessment.exe
+C:\Users\GKN\Desktop\RAGE - Kostas\StealthAssessment\StealthAssessment\obj\Debug\StealthAssessment.pdb
+C:\Users\GKN\Desktop\RAGE - Kostas\StealthAssessment\StealthAssessment\bin\Debug\StealthAssessment.exe
+C:\Users\GKN\Desktop\RAGE - Kostas\StealthAssessment\StealthAssessment\bin\Debug\StealthAssessment.pdb
+C:\Users\GKN\Desktop\RAGE - Kostas\StealthAssessment\StealthAssessment\obj\Debug\StealthAssessment.csprojResolveAssemblyReference.cache
