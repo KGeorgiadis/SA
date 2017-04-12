@@ -52,7 +52,14 @@ namespace StealthAssessment
                 new Tuple<string[], string[], string[][], string[][], string[][][], string[][][]>
                 (SelectedMetadataMetrics, SelectedGametraceMetrics, NoDubsParsedIndicatorsOfSelectedMetadataMetrics,
                 NoDubsParsedIndicatorsOfSelectedGametraceMetrics, EvidenceRules, StatisticalSubmodel); //Stores all the elements declared at the Evidence Model.
-            string[][] AllData = new string[][] { };    //Stores all the data from the game log file.           
+            string[][] AllData = new string[][] { };    //Stores all the data from the game log file.    
+            string[] QueryData = new string[] { }; //Stores the queried data.
+            string[][] SelectedMetadataIndicators = new string[][] { };
+            Tuple<string[], string[][]> Query = new Tuple<string[], string[][]>(QueryData, SelectedMetadataIndicators);
+            string[][] ParsedQueryData = new string[][] { }; //Stores the parsed queried data.
+            string[][][] ValidationMetricsFacets = new string[][][] { }; //Stores the validation data for every facet of each competency.
+            string[][] ValidationMetricsCompetencies = new string[][] { }; //Stores the validation data for each competency.
+            Tuple<string[][], string[][][]> ValidationData = new Tuple<string[][], string[][][]>(ValidationMetricsCompetencies, ValidationMetricsFacets);
 
 
             //Core execution of the Stealth Assessment prototype.
@@ -242,16 +249,25 @@ namespace StealthAssessment
                                     Console.WriteLine();
                                 }
 
+                            //Query data for Bayes Network
+                            Query = BayesNet.QueryAuto(EvidenceModel.Item1, EvidenceModel.Item2, EvidenceModel.Item3);
 
+                            //Parse queried data
+                            ParsedQueryData = BayesNet.ParseQueryData(Query.Item1);
+
+                            //Query validation data
+                            ValidationData = BayesNet.ValidationMetrics(EvidenceModel.Item1, Query.Item2, CompetencyModel);
+
+                            //Generate .arff files
+                            BayesNet.CreateArffFiles();
 
                             /**  
                              * FUTURE ADDITIONS FOR BAYESIAN NETWORK
                              *  
-                             *  1) Classification.
-                             *  2) Query data (including its parsing).
-                             *  3) Training (select sample size and calculate the prior probabilities tables from the queried data).
-                             *  4) Testing (select testing sample and run Bayes Net for results).
-                             *  5) Save and export results.
+                             *  1) Cluster
+                             *  2) Training (select sample size and calculate the prior probabilities tables from the queried data).
+                             *  3) Testing (select testing sample and run Bayes Net for results).
+                             *  4) Save and export results.
                             */
 
                             repeat = false;
@@ -270,15 +286,23 @@ namespace StealthAssessment
                             //Manually set Evidence Model.
                             EvidenceModel = ECD.EvidenceModelCustom(TaskModel, CompetencyModel);
 
+                            //Query data for Bayes Network
+                            Query = BayesNet.QueryCustom(EvidenceModel.Item1, EvidenceModel.Item2, EvidenceModel.Item3);
+
+                            //Parse queried data
+                            ParsedQueryData = BayesNet.ParseQueryData(Query.Item1);
+
+                            //Query validation data
+                            ValidationData = BayesNet.ValidationMetrics(EvidenceModel.Item1, Query.Item2, CompetencyModel);
+
 
                             /**  
                              * FUTURE ADDITIONS FOR BAYESIAN NETWORK
                              *  
-                             *  1) Classification.
-                             *  2) Query data (including its parsing).
-                             *  3) Training (select sample size and calculate the prior probabilities tables from the queried data).
-                             *  4) Testing (select testing sample and run Bayes Net for results).
-                             *  5) Save and export results.
+                             *  1) Cluster
+                             *  2) Training (select sample size and calculate the prior probabilities tables from the queried data).
+                             *  3) Testing (select testing sample and run Bayes Net for results).
+                             *  4) Save and export results.
                             */
 
                             repeat = false;

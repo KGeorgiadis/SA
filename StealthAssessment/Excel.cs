@@ -150,8 +150,7 @@ namespace StealthAssessment
                 ws.Columns.ClearFormats();
                 ws.Rows.ClearFormats();
 
-                int overhead = 1; //(Optional manually set overhead)
-                int rows_no = range.Rows.Count - overhead;
+                int rows_no = range.Rows.Count;
                 int col_no = range.Columns.Count;
 
                 string[][] Data = new string[col_no][]; //Stores all the data from the game log file
