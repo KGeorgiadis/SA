@@ -148,5 +148,42 @@ namespace StealthAssessment
             }
             return repeat;
         }
+
+        //Check user input for conversion exceptions from a string to an double.
+        public bool StringToDouble(string input)
+        {
+            bool check = true;  //This variable checks if any exception occurs (true: no exception, false: exception).
+            bool repeat = false;    //This variable suggests if the user needs to re-enter input (true: repeat input, false: don't repeat input).
+
+            try
+            {
+                Convert.ToDouble(input);
+            }
+
+            catch (FormatException)
+            {
+                Console.WriteLine("Input string is not a double.");   //Check if input is double.
+                check = false;
+            }
+
+            catch (OverflowException)
+            {
+                Console.WriteLine("The number cannot fit in a double.");    //Check size of double.
+                check = false;
+            }
+
+            finally
+            {
+                if (check == false)
+                {
+                    repeat = true;
+                }
+                else
+                {
+                    repeat = false;
+                }
+            }
+            return repeat;
+        }
     }
 }

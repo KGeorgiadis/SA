@@ -1,0 +1,154 @@
+Instance no: 1
+Communication:
+Polite:S-OP-P S-ASKPR-P S-CLOSE-P 
+
+Instance no: 2
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P S-CLOSE-P 
+
+Instance no: 3
+Communication:
+Polite:S-OP-P S-ASKPR-P 
+
+Instance no: 4
+Communication:
+Polite:S-OP-P S-ASKPR-P 
+
+Instance no: 5
+Communication:
+Polite:S-OP-N S-DLANG-P S-ASKPR2-P S-CLOSE-P 
+
+Instance no: 6
+Communication:
+Polite:S-OP-P S-ASKPR-P S-CLOSE-P 
+
+Instance no: 7
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKTP1-P 
+
+Instance no: 8
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P 
+
+Instance no: 9
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P 
+
+Instance no: 10
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR-R S-DLANG-P S-ASKTP1-P 
+
+Instance no: 11
+Communication:
+Polite:S-OP-P S-ASKPR-P 
+
+Instance no: 12
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P S-CLOSE-P 
+
+Instance no: 13
+Communication:
+Polite:S-OP-P S-ASKPR-P 
+
+Instance no: 14
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKTP1-P 
+
+Instance no: 15
+Communication:
+Polite:S-OP-P S-ASKPR-P S-CLOSE-P 
+
+Instance no: 16
+Communication:
+Polite:S-OP-P S-ASKPR-P 
+
+Instance no: 17
+Communication:
+Polite:S-OP-N S-DLANG-P S-ASKTP1-P S-CLOSE-P 
+
+Instance no: 18
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P 
+
+Instance no: 19
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P 
+
+Instance no: 20
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P S-CLOSE-P 
+
+Instance no: 21
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P S-CLOSE-P 
+
+Instance no: 22
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P S-CLOSE-P 
+
+Instance no: 23
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P 
+
+Instance no: 24
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P S-CLOSE-P 
+
+Instance no: 25
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKTP1-P S-CLOSE-P 
+
+Instance no: 26
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKTP1-P S-CLOSE-P 
+
+Instance no: 27
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKTP1-P 
+
+Instance no: 28
+Communication:
+Polite:S-OP-P S-ASKPR-R S-DLANG-R 
+
+Instance no: 29
+Communication:
+Polite:S-OP-P S-DLANG-P S-ASKPR2-P 
+
+Instance no: 30
+Communication:
+Polite:S-OP-N S-DLANG-P S-ASKPR2-P 
+
+No. of incomplete datasets: 0
+
+Exceeding data for instance 1 is: Start FirstResponse DataCollected S-LKUP FaqResponse S-DSE-LOWST5 Closure 
+Exceeding data for instance 2 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSP-HSCLS Closure 
+Exceeding data for instance 3 is: Start FirstResponse DataCollected S-LKUP FaqResponse S-DSS-MAGF 
+Exceeding data for instance 4 is: Start FirstResponse DataCollected S-LKUP FaqResponse S-DSP-HOTOK 
+Exceeding data for instance 5 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSS-POWR Closure 
+Exceeding data for instance 6 is: Start FirstResponse DataCollected S-LKUP FaqResponse S-DSE-RECAL Closure 
+Exceeding data for instance 7 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSP-CORCO 
+Exceeding data for instance 8 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSS-RECAL 
+Exceeding data for instance 9 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSS-REPL 
+Exceeding data for instance 10 is: Start FirstResponse AskProblem1 SecondChance AskProblem1 
+Exceeding data for instance 11 is: Start FirstResponse DataCollected S-LKUP FaqResponse S-DSS-BROKEN 
+Exceeding data for instance 12 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSP-OVERL Closure 
+Exceeding data for instance 13 is: Start FirstResponse DataCollected S-LKUP FaqResponse S-DSS-POWR 
+Exceeding data for instance 14 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSS-COLD 
+Exceeding data for instance 15 is: Start FirstResponse DataCollected S-LKUP FaqResponse S-NOTFND Closure 
+Exceeding data for instance 16 is: Start FirstResponse DataCollected S-LKUP FaqResponse S-DSP-HOTOK 
+Exceeding data for instance 17 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSE-SNFRST Closure 
+Exceeding data for instance 18 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSE-HULL 
+Exceeding data for instance 19 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSE-HRDRES5 
+Exceeding data for instance 20 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSP-HSSCR Closure 
+Exceeding data for instance 21 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSE-HRDRES5 Closure 
+Exceeding data for instance 22 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSS-BOOT Closure 
+Exceeding data for instance 23 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSE-SNWAIT 
+Exceeding data for instance 24 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSE-RECAL Closure 
+Exceeding data for instance 25 is: Start FirstResponse AskProblem1 DataCollected S-REROUTE Closure 
+Exceeding data for instance 26 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-NOTFND Closure 
+Exceeding data for instance 27 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSS-BROKEN 
+Exceeding data for instance 28 is: Start FirstResponse SecondChance 
+Exceeding data for instance 29 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSP-REPL 
+Exceeding data for instance 30 is: Start FirstResponse AskProblem1 DataCollected S-LKUP FaqResponse S-DSP-HSSCR 
+
+Non-used indicators: [1]Start [2]FirstResponse [3]DataCollected [4]S-LKUP [5]FaqResponse [6]S-DSE-LOWST5 [7]Closure [8]AskProblem1 [9]S-DSP-HSCLS [10]S-DSS-MAGF [11]S-DSP-HOTOK [12]S-DSS-POWR [13]S-DSE-RECAL [14]S-DSP-CORCO [15]S-DSS-RECAL [16]S-DSS-REPL [17]SecondChance [18]S-DSS-BROKEN [19]S-DSP-OVERL [20]S-DSS-COLD [21]S-NOTFND [22]S-DSE-SNFRST [23]S-DSE-HULL [24]S-DSE-HRDRES5 [25]S-DSP-HSSCR [26]S-DSS-BOOT [27]S-DSE-SNWAIT [28]S-REROUTE [29]S-DSP-REPL 

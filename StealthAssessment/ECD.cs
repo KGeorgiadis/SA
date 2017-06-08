@@ -718,7 +718,7 @@ namespace StealthAssessment
         {
             //Declaring Variables.
             string[][] Parsed = new string[UnparsedIndicatorsOfSelectedMetrics.Length][];
-            char[] delimiterChars = { ':' };
+            char[] delimiterChars = { ':', '.' };
             int NoOfParsedIndicators = 0;
 
             for (int x = 0; x < UnparsedIndicatorsOfSelectedMetrics.Length; x++)

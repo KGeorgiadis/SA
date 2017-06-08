@@ -1,0 +1,206 @@
+Performing 66% split evaluation.
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+Clustering for Polite(3): Clustering for Communication 
+Queried game traces(11): Clustering for Communication 
+Clustering for Communication(3): 
+LogScore Bayes: -68.48229664662068
+LogScore BDeu: -185.2766079564633
+LogScore MDL: -160.00493855348788
+LogScore ENTROPY: -104.0605979493255
+LogScore AIC: -142.0605979493255
+
+
+EVALUATION OF TRAINING DATASET.
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,0058
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,8857
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,1085
+
+Probability of class [Low] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,0131
+Probability of class [Medium] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,9727
+Probability of class [High] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,0143
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0069
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0952
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,8979
+
+Probability of class [Low] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,0131
+Probability of class [Medium] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,9727
+Probability of class [High] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,0143
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0069
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0952
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,8979
+
+Probability of class [Low] for [High,S-OP-P:S-ASKPR-P:S-CLOSE-P,High] is: 0,0093
+Probability of class [Medium] for [High,S-OP-P:S-ASKPR-P:S-CLOSE-P,High] is: 0,1281
+Probability of class [High] for [High,S-OP-P:S-ASKPR-P:S-CLOSE-P,High] is: 0,8626
+
+Probability of class [Low] for [High,S-OP-N:S-DLANG-P:S-ASKTP1-P:S-CLOSE-P,High] is: 0,0142
+Probability of class [Medium] for [High,S-OP-N:S-DLANG-P:S-ASKTP1-P:S-CLOSE-P,High] is: 0,1955
+Probability of class [High] for [High,S-OP-N:S-DLANG-P:S-ASKTP1-P:S-CLOSE-P,High] is: 0,7903
+
+Probability of class [Low] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,0131
+Probability of class [Medium] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,9727
+Probability of class [High] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,0143
+
+Probability of class [Low] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,0131
+Probability of class [Medium] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,9727
+Probability of class [High] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,0143
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,0113
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,7789
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,2098
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,0058
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,8857
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,1085
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,0058
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,8857
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,1085
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,0058
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,8857
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,1085
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P:S-CLOSE-P,High] is: 0,0142
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P:S-CLOSE-P,High] is: 0,1955
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P:S-CLOSE-P,High] is: 0,7903
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0069
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0952
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,8979
+
+Probability of class [Low] for [High,S-OP-N:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0142
+Probability of class [Medium] for [High,S-OP-N:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,1955
+Probability of class [High] for [High,S-OP-N:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,7903
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,0058
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,8857
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,1085
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,0113
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,7789
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,2098
+
+Probability of class [Low] for [High,S-OP-P:S-ASKPR-P:S-CLOSE-P,High] is: 0,0093
+Probability of class [Medium] for [High,S-OP-P:S-ASKPR-P:S-CLOSE-P,High] is: 0,1281
+Probability of class [High] for [High,S-OP-P:S-ASKPR-P:S-CLOSE-P,High] is: 0,8626
+
+
+Correctly Classified Instances          19              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0819
+Root mean squared error                  0.1101
+Relative absolute error                 23.9871 %
+Root relative squared error             27.2299 %
+Total Number of Instances               19     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         Low
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Medium
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     High
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  0  0  0 |  a = Low
+  0 11  0 |  b = Medium
+  0  0  8 |  c = High
+
+
+EVALUATION OF TEST DATASET.
+Probability of class [Low] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,0131
+Probability of class [Medium] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,9727
+Probability of class [High] for [Medium,S-OP-P:S-ASKPR-P,Medium] is: 0,0143
+
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0069
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0952
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,8979
+
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0069
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0952
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,8979
+
+
+Probability of class [Low] for [Low,S-OP-P:S-ASKPR-R:S-DLANG-R,Low] is: 0,3318
+Probability of class [Medium] for [Low,S-OP-P:S-ASKPR-R:S-DLANG-R,Low] is: 0,3053
+Probability of class [High] for [Low,S-OP-P:S-ASKPR-R:S-DLANG-R,Low] is: 0,3629
+
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,0113
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,7789
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,2098
+
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P:S-CLOSE-P,High] is: 0,0142
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P:S-CLOSE-P,High] is: 0,1955
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKTP1-P:S-CLOSE-P,High] is: 0,7903
+
+
+Probability of class [Low] for [High,S-OP-P:S-ASKPR-P:S-CLOSE-P,High] is: 0,0093
+Probability of class [Medium] for [High,S-OP-P:S-ASKPR-P:S-CLOSE-P,High] is: 0,1281
+Probability of class [High] for [High,S-OP-P:S-ASKPR-P:S-CLOSE-P,High] is: 0,8626
+
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,0058
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,8857
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,1085
+
+
+Probability of class [Low] for [Medium,S-OP-N:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,0964
+Probability of class [Medium] for [Medium,S-OP-N:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,7982
+Probability of class [High] for [Medium,S-OP-N:S-DLANG-P:S-ASKPR2-P,Medium] is: 0,1054
+
+
+Probability of class [Low] for [Medium,S-OP-P:S-DLANG-P:S-ASKPR-R:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,0964
+Probability of class [Medium] for [Medium,S-OP-P:S-DLANG-P:S-ASKPR-R:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,7982
+Probability of class [High] for [Medium,S-OP-P:S-DLANG-P:S-ASKPR-R:S-DLANG-P:S-ASKTP1-P,Medium] is: 0,1054
+
+
+Probability of class [Low] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0069
+Probability of class [Medium] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,0952
+Probability of class [High] for [High,S-OP-P:S-DLANG-P:S-ASKPR2-P:S-CLOSE-P,High] is: 0,8979
+
+
+10 out of 11 correct (90,9090909090909%)
+
+Correctly Classified Instances          10               90.9091 %
+Incorrectly Classified Instances         1                9.0909 %
+Kappa statistic                          0.8333
+Mean absolute error                      0.1265
+Root mean squared error                  0.1817
+Relative absolute error                 31.7736 %
+Root relative squared error             41.2247 %
+Total Number of Instances               11     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    0,000      0,000    0,000      0,000    1,000     1,000     Low
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Medium
+                 1,000    0,167    0,833      1,000    0,909      0,833    1,000     1,000     High
+Weighted Avg.    0,909    0,076    0,833      0,909    0,868      0,833    1,000     1,000     
+
+
+=== Confusion Matrix ===
+
+ a b c   <-- classified as
+ 0 0 1 | a = Low
+ 0 5 0 | b = Medium
+ 0 0 5 | c = High
+
+

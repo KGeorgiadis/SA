@@ -1,6 +1,0 @@
-@relation MyRelation
-
-@attribute att1 numeric
-
-@data
-2.718282

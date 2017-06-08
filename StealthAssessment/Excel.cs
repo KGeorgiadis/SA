@@ -54,6 +54,7 @@ namespace StealthAssessment
             return;
         }
 
+        //Creates an Excel file.
         public void ExcelCreate(string filename)
         {
             wb = xlApp.Workbooks.Add(XlWBATemplate.xlWBATWorksheet);
@@ -69,17 +70,20 @@ namespace StealthAssessment
             return;
         }
 
+        //Add sheets an Excel file.
         public void ExcelAddSheets(string filename)
         {
             ws = wb.Sheets.Add();
             ws.Name = filename;
         }
 
+        //Opens an Excel file.
         public void ExcelOpen(string filename)
         {
             wb = xlApp.Workbooks.Open(Path.Combine(@path + filename), CorruptLoad: true);
         }
 
+        //Saves an Excel file.
         public void ExcelSave(string filename)
         {
             if (!System.IO.File.Exists(Path.Combine(@path + filename)))
@@ -92,6 +96,7 @@ namespace StealthAssessment
             }
         }
 
+        //Quit Excel file and release COM objects from memory.
         public void ExcelQuit()
         {
             GC.Collect();
@@ -107,12 +112,14 @@ namespace StealthAssessment
             System.Runtime.InteropServices.Marshal.FinalReleaseComObject(xlApp);
         }
 
+        //Select a specific sheet of an Excel file.
         public void SelectWorksheet(string sheetname)
         {
             ws = (Worksheet)this.xlApp.Worksheets[sheetname];
             ws.Select(true);
         }
 
+        //Sets the application to an inactive state if multiple Excel files are open.
         private void SetAppInactive()
         {
             try
@@ -127,6 +134,7 @@ namespace StealthAssessment
             }
         }
 
+        //Loads all the data from the game data file.
         public string[][] LoadData()
         {
             //Declaration of variables
@@ -201,6 +209,7 @@ namespace StealthAssessment
 
         }
 
+        //Exctract the metrics from the game data file.
         public string[] ExtractMetrics(string filename)
         {
             ExcelOpen(filename); //(Optional to select file in the future)
