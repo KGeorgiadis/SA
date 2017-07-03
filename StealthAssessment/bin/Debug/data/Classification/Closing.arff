@@ -1,0 +1,36 @@
+@relation Closing
+
+@attribute 'Queried game traces' {S-CLOSE-P,'?'}
+@attribute 'Clustering for Closing' {Low,Medium,High}
+
+@data
+S-CLOSE-P,High
+S-CLOSE-P,High
+'?',Low
+'?',Low
+S-CLOSE-P,High
+S-CLOSE-P,High
+'?',Low
+'?',Low
+'?',Low
+'?',Low
+'?',Low
+S-CLOSE-P,High
+'?',Low
+'?',Low
+S-CLOSE-P,High
+'?',Low
+S-CLOSE-P,High
+'?',Low
+'?',Low
+S-CLOSE-P,High
+S-CLOSE-P,High
+S-CLOSE-P,High
+'?',Low
+S-CLOSE-P,High
+S-CLOSE-P,High
+S-CLOSE-P,High
+'?',Low
+'?',Low
+'?',Low
+'?',Low

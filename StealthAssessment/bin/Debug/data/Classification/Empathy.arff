@@ -1,0 +1,36 @@
+@relation Empathy
+
+@attribute 'Queried game traces' {'?'}
+@attribute 'Clustering for Empathy' {Low,Medium,High}
+
+@data
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High
+'?',High

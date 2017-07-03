@@ -1,0 +1,36 @@
+@relation 'Find in DB'
+
+@attribute 'Queried game traces' {'?',S-NOTFND,S-REROUTE}
+@attribute 'Clustering for Find in DB' {Low,Medium,High}
+
+@data
+'?',High
+'?',High
+'?',Low
+'?',Low
+'?',High
+'?',High
+'?',Low
+'?',Low
+'?',Low
+'?',Low
+'?',Low
+'?',High
+'?',Low
+'?',Low
+S-NOTFND,Low
+'?',Low
+'?',High
+'?',Low
+'?',Low
+'?',High
+'?',High
+'?',High
+'?',Low
+'?',High
+S-REROUTE,Low
+S-NOTFND,Low
+'?',Low
+'?',Low
+'?',Low
+'?',Low

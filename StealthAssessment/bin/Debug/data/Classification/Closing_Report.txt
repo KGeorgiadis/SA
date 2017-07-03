@@ -1,0 +1,124 @@
+Performing 66% split evaluation.
+
+Bayes Network Classifier
+not using ADTree
+#attributes=2 #classindex=1
+Network structure (nodes followed by parents)
+Queried game traces(2): Clustering for Closing 
+Clustering for Closing(3): 
+LogScore Bayes: -20.28675572994145
+LogScore BDeu: -25.315089616453346
+LogScore MDL: -28.78035869654057
+LogScore ENTROPY: -21.291028012655595
+LogScore AIC: -26.291028012655595
+
+
+EVALUATION OF TRAINING DATASET.
+
+Correctly Classified Instances          20              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0449
+Root mean squared error                  0.0493
+Relative absolute error                 13.3606 %
+Root relative squared error             12.2904 %
+Total Number of Instances               20     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Low
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         Medium
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     High
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 12  0  0 |  a = Low
+  0  0  0 |  b = Medium
+  0  0  8 |  c = High
+
+
+EVALUATION OF TEST DATASET.
+Probability of class [Low] for [S-CLOSE-P,High] is: 0,0549
+Probability of class [Medium] for [S-CLOSE-P,High] is: 0,0285
+Probability of class [High] for [S-CLOSE-P,High] is: 0,9166
+
+
+Probability of class [Low] for [S-CLOSE-P,High] is: 0,0549
+Probability of class [Medium] for [S-CLOSE-P,High] is: 0,0285
+Probability of class [High] for [S-CLOSE-P,High] is: 0,9166
+
+
+Probability of class [Low] for ['?',Low] is: 0,9433
+Probability of class [Medium] for ['?',Low] is: 0,0196
+Probability of class [High] for ['?',Low] is: 0,0371
+
+
+Probability of class [Low] for [S-CLOSE-P,High] is: 0,0549
+Probability of class [Medium] for [S-CLOSE-P,High] is: 0,0285
+Probability of class [High] for [S-CLOSE-P,High] is: 0,9166
+
+
+Probability of class [Low] for [S-CLOSE-P,High] is: 0,0549
+Probability of class [Medium] for [S-CLOSE-P,High] is: 0,0285
+Probability of class [High] for [S-CLOSE-P,High] is: 0,9166
+
+
+Probability of class [Low] for [S-CLOSE-P,High] is: 0,0549
+Probability of class [Medium] for [S-CLOSE-P,High] is: 0,0285
+Probability of class [High] for [S-CLOSE-P,High] is: 0,9166
+
+
+Probability of class [Low] for ['?',Low] is: 0,9433
+Probability of class [Medium] for ['?',Low] is: 0,0196
+Probability of class [High] for ['?',Low] is: 0,0371
+
+
+Probability of class [Low] for ['?',Low] is: 0,9433
+Probability of class [Medium] for ['?',Low] is: 0,0196
+Probability of class [High] for ['?',Low] is: 0,0371
+
+
+Probability of class [Low] for ['?',Low] is: 0,9433
+Probability of class [Medium] for ['?',Low] is: 0,0196
+Probability of class [High] for ['?',Low] is: 0,0371
+
+
+Probability of class [Low] for ['?',Low] is: 0,9433
+Probability of class [Medium] for ['?',Low] is: 0,0196
+Probability of class [High] for ['?',Low] is: 0,0371
+
+
+10 out of 10 correct (100%)
+
+Correctly Classified Instances          10              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0467
+Root mean squared error                  0.0513
+Relative absolute error                 13.0109 %
+Root relative squared error             12.4442 %
+Total Number of Instances               10     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Low
+                 0,000    0,000    0,000      0,000    0,000      0,000    ?         ?         Medium
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     High
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+
+=== Confusion Matrix ===
+
+ a b c   <-- classified as
+ 5 0 0 | a = Low
+ 0 0 0 | b = Medium
+ 0 0 5 | c = High
+
+

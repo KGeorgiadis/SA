@@ -1,0 +1,132 @@
+Clusterer for Empathy
+
+MakeDensityBasedClusterer:
+
+Wrapped clusterer:
+kMeans
+======
+
+Number of iterations: 1
+Within cluster sum of squared errors: 0.0
+
+Initial starting points (random):
+
+Cluster 0: 0
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+Cluster#
+Attribute                      Full Data          0
+(30.0)     (30.0)
+===================================================
+Validation data for Empathy            0          0
+
+
+
+Fitted estimators (with ML estimates of variance):
+
+Cluster: 0 Prior probability: 1
+
+Attribute: Validation data for Empathy
+Normal Distribution. Mean = 0 StdDev = 0
+Clustered Instances
+
+0      30 (100%)
+
+
+Log likelihood: 12.89657
+
+
+Cluster [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+
+Prior probability of cluster [0] for instance [0] is: 1
+Instance [0] is classified as High
+

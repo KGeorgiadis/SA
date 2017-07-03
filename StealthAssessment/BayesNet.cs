@@ -1308,11 +1308,12 @@ namespace StealthAssessment
                         weka.classifiers.Classifier cl = new weka.classifiers.bayes.BayesNet();
 
                         //randomize the order of the instances in the dataset.
+                        /*
                         weka.filters.Filter myRandom = new weka.filters.unsupervised.instance.Randomize();
                         myRandom.setInputFormat(insts);
-                        insts = weka.filters.Filter.useFilter(insts, myRandom);
+                        insts = weka.filters.Filter.useFilter(insts, myRandom);*/
 
-                        int trainSize = insts.numInstances() * percentSplit / 100;
+                        int trainSize = (int)Math.Round((double)insts.numInstances() * percentSplit / 100);
                         int testSize = insts.numInstances() - trainSize;
                         weka.core.Instances train = new weka.core.Instances(insts, 0, trainSize);
                         weka.core.Instances test = new weka.core.Instances(insts, 0, 0);
@@ -1588,76 +1589,67 @@ namespace StealthAssessment
 
                     weka.classifiers.Classifier cl = new weka.classifiers.bayes.BayesNet();
 
-                    //randomize the order of the instances in the dataset.
-                    weka.filters.Filter myRandom = new weka.filters.unsupervised.instance.Randomize();
-                    myRandom.setInputFormat(insts);
-                    insts = weka.filters.Filter.useFilter(insts, myRandom);
+                    // randomize data
+                    int seed = 1;
+                    java.util.Random rand = new java.util.Random(seed);
+                    weka.core.Instances randData = new weka.core.Instances(insts);
+                    randData.randomize(rand);
 
-                    int trainSize = insts.numInstances() * percentSplit / 100;
+                    //set the sizes of the training and testing datasets according to the 66% split rule.
+                    int trainSize = (int)Math.Round((double)insts.numInstances() * percentSplit / 100);
                     int testSize = insts.numInstances() - trainSize;
-                    weka.core.Instances train = new weka.core.Instances(insts, 0, trainSize);
+
+                    //Initialize the training and testing datasets.
+                    weka.core.Instances train = new weka.core.Instances(insts, 0, 0);
                     weka.core.Instances test = new weka.core.Instances(insts, 0, 0);
 
+                    for (int j = 0; j < insts.numInstances(); j++)
+                    {
+
+                        weka.core.Instance currentInst = randData.instance(j);
+
+                        if (j < trainSize)
+                        {
+                            train.add(currentInst);
+                        }
+
+                        else
+                        {
+                            test.add(currentInst);
+                        }
+
+                    }
 
                     cl.buildClassifier(train);
 
                     //Save BayesNet results in .txt file
                     using (System.IO.StreamWriter file = new System.IO.StreamWriter("./data/Classification/" + CompetencyModel.Item1[x] + "_Report.txt"))
                     {
-                        file.WriteLine("Performing " + percentSplit + "% split evaluation.");
-                        file.WriteLine();
-
-                        //print model
-                        file.WriteLine(cl);
-                        file.WriteLine();
-
-                        //Print prior probabilities for each instance.                            
-                        file.WriteLine("EVALUATION OF TRAINING DATASET.");
-                        for (int i = 0; i < trainSize; i++)
-                        {
-                            weka.core.Instance currentInst = insts.instance(i);
-                            double predictedClass = cl.classifyInstance(currentInst);
-                            //train.add(currentInst);
-
-                            double[] prediction = cl.distributionForInstance(currentInst);
-
-                            for (int p = 0; p < prediction.Length; p++)
-                            {
-                                file.WriteLine("Probability of class [{0}] for [{1}] is: {2}", currentInst.classAttribute().value(p), currentInst, Math.Round(prediction[p], 4));
-                            }
-
-                            file.WriteLine();
-                        }
+                        //Print classifier analytics for all the dataset
+                        file.WriteLine("EVALUATION OF ALL DATASET.");
 
                         // Train the model
-                        weka.classifiers.Evaluation eTrain = new weka.classifiers.Evaluation(train);
-                        eTrain.evaluateModel(cl, train);
+                        weka.classifiers.Evaluation eval = new weka.classifiers.Evaluation(randData);
+                        eval.evaluateModel(cl, test);
 
                         // Print the results as in Weka explorer:
                         //Print statistics
-                        String strSummaryTrain = eTrain.toSummaryString();
-                        file.WriteLine(strSummaryTrain);
+                        String strSummaryAlldata = eval.toSummaryString();
+                        file.WriteLine(strSummaryAlldata);
                         file.WriteLine();
 
                         //Print detailed class statistics
-                        file.WriteLine(eTrain.toClassDetailsString());
+                        file.WriteLine(eval.toClassDetailsString());
                         file.WriteLine();
 
                         //Print confusion matrix
-                        file.WriteLine(eTrain.toMatrixString());
-                        file.WriteLine();
+                        file.WriteLine(eval.toMatrixString());
 
-                        // Get the confusion matrix
-                        double[][] cmMatrixTrain = eTrain.confusionMatrix();
-
-                        //Print prior probabilities for each instance.                            
-                        file.WriteLine("EVALUATION OF TEST DATASET.");
                         int numCorrect = 0;
-                        for (int i = trainSize; i < insts.numInstances(); i++)
+                        for (int i = 0; i < test.numInstances(); i++)
                         {
-                            weka.core.Instance currentInst = insts.instance(i);
+                            weka.core.Instance currentInst = test.instance(i);
                             double predictedClass = cl.classifyInstance(currentInst);
-                            test.add(currentInst);
 
                             double[] prediction = cl.distributionForInstance(currentInst);
 
@@ -1668,34 +1660,13 @@ namespace StealthAssessment
                             file.WriteLine();
 
                             file.WriteLine();
-                            if (predictedClass == insts.instance(i).classValue())
+                            if (predictedClass == test.instance(i).classValue())
                                 numCorrect++;
                         }
 
                         file.WriteLine(numCorrect + " out of " + testSize + " correct (" +
                                     (double)((double)numCorrect / (double)testSize * 100.0) + "%)");
 
-                        // Test the model
-                        weka.classifiers.Evaluation eTest = new weka.classifiers.Evaluation(test);
-                        eTest.evaluateModel(cl, test);
-
-                        // Print the results as in Weka explorer:
-                        //Print statistics
-                        String strSummaryTest = eTest.toSummaryString();
-
-                        file.WriteLine(strSummaryTest);
-                        file.WriteLine();
-
-                        //Print detailed class statistics
-                        file.WriteLine(eTest.toClassDetailsString());
-                        file.WriteLine();
-
-                        //Print confusion matrix
-                        file.WriteLine(eTest.toMatrixString());
-                        file.WriteLine();
-
-                        // Get the confusion matrix
-                        double[][] cmMatrixTest = eTest.confusionMatrix();
 
                         System.Console.WriteLine("Bayesian Network results saved in {0}_Report.txt file successfully.", CompetencyModel.Item1[x]);
                     }
